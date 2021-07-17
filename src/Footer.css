@@ -1,0 +1,121 @@
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+li {
+  color: #eee;
+}
+
+Footer {
+  background-color: #555;
+  color: #bbb;
+  line-height: 1.5;
+}
+
+.white {
+  color: #eee;
+}
+
+a {
+  text-decoration: none;
+  color: #eee;
+}
+a:hover {
+  text-decoration: underline;
+}
+.ft-title {
+  color: #fff;
+  font-family: "Merriweather", serif;
+  font-size: 1.25rem;
+  padding-bottom: 0.625rem;
+}
+/* Sticks footer to bottom */
+.footer body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.container {
+  flex: 1;
+}
+/* Footer main */
+.ft-main {
+  display: flex;
+  flex-direction: row;
+}
+
+@media only screen and (min-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    justify-content: space-evenly;
+  }
+}
+.ft-main-item {
+  padding: 0.625rem;
+  min-width: 8.5rem;
+}
+
+/* Footer main | Newsletter form */
+.ft-main-item form {
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-main-item input[type="email"] {
+  border: 0;
+  padding: 0.625rem;
+  margin-top: 0.3125rem;
+}
+.ft-main-item input[type="submit"] {
+  background-color: #00d188;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  padding: 0.625rem 0.9375rem;
+  margin-top: 0.3125rem;
+}
+/* Footer social */
+.ft-social {
+  padding: 0 1.875rem 1.25rem;
+}
+.ft-social-list {
+  display: flex;
+  justify-content: center;
+  border-top: 1px #777 solid;
+  padding-top: 1.25rem;
+}
+.ft-social-list li {
+  margin: 0.5rem;
+  font-size: 1.25rem;
+}
+/* Footer legal */
+.ft-legal {
+  padding: 0.9375rem 1.875rem;
+  background-color: #333;
+}
+.ft-left {
+  display: flex;
+}
+.ft-legal-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.ft-legal-list li {
+  margin: 0.125rem 0.625rem;
+  white-space: nowrap;
+}
+/* one before the last child */
+.ft-legal-list li:nth-last-child(2) {
+  flex: 1;
+}
+@media only screen and (max-width: 77.5rem /* 1240px */) {
+  .ft-main {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 77.5rem /* 1240px */) {
+  .ft-left {
+    flex-direction: row;
+  }
+}
